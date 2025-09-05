@@ -4,18 +4,6 @@
 # Adjust placeholders (subscription IDs, resource names, locations) as needed.
 ###############################################
 
-# Required naming/context variables
-env               = "G3Dc"          # Must match pattern Upper-lower-Upper-lower per validation
-group             = "ABC"          # Alphanumeric only
-project           = "Portal"        # Alphanumeric only
-userDefinedString = "GPT4o"         # Alphanumeric only - model identifier
-
-# Resource group object (expected: name & location)
-resource_group = {
-    name     = "rg-apps-portal-devp"
-    location = "canadacentral"
-}
-
 # Cognitive deployment configurations - Map of deployments
 cognitive_deployments = {
     # GPT-4o deployment

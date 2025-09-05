@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "main" {
 }
 
 module "openai" {
-  source = "github.com/canada-ca-terraform-modules/terraform-azurerm-cognitive-account-caf.git?ref=main"
+  source = "github.com/canada-ca-terraform-modules/terraform-azurerm-cognitive-account-caf.git?ref=v1.0.0"
   
   env               = "G3Pc"          # Must match pattern Upper-lower-Upper-lower per validation
   group             = "ECT"          # Alphanumeric only

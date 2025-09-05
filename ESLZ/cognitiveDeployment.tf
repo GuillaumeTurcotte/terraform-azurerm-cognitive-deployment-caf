@@ -22,7 +22,7 @@ module "openai" {
 }
 
 module "deployments" {
-  source = "github.com/canada-ca-terraform-modules/terraform-azurerm-cognitive-deployment-caf.git?ref=main"
+  source = "github.com/canada-ca-terraform-modules/terraform-azurerm-cognitive-deployment-caf.git?ref=v1.0.0"
   # Cognitive account configuration
   cognitive_deployments = {
     "gpt4o" = {
